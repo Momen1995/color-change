@@ -3,23 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>RGB Color Changer App</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Container to show background color changes -->
     <div class="container" id="root"></div>
-    <div class="input-container">
-     <div class="inputs-detail">
-       <input type="text" placeholder="Enter RGB value (255, 255,255)" class="color-input"/>
-       <button class="done-btn">Apply color</button>
-     </div>
 
+    <!-- Input container for custom color and buttons -->
+    <div class="input-container">
+      <!-- RGB Input and Apply Color Button -->
+      <div class="inputs-detail">
+        <input
+          type="text"
+          placeholder="Enter RGB value (e.g., 255, 255, 255)"
+          class="color-input"
+        />
+        <button class="done-btn">Apply Color</button>
+      </div>
+
+      <!-- Buttons to start and stop random color generation -->
       <div class="btn-container">
-        <button id="start-btn">Start btn</button>
-        <button id="stop-btn">Stop btn</button>
+        <button id="start-btn">Start Color Change</button>
+        <button id="stop-btn">Stop Color Change</button>
       </div>
     </div>
-     <p id="demo"></p>
+
+    <!-- Output paragraph to show current RGB value -->
+    <p id="demo"></p>
+
+    <!-- External JavaScript file -->
     <script src="./main.js"></script>
   </body>
 </html>

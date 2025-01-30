@@ -48,9 +48,9 @@ body {
   border-radius: 3px;
 }
 
-.done-btn{
+.done-btn {
   color: #222;
-  padding: .7rem;
+  padding: 0.7rem;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -71,14 +71,16 @@ body {
   background-color: crimson;
 }
 
-#demo{
+#demo {
   text-align: center;
   font-size: 1.3rem;
   margin-top: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
 }
 
 /* small device responsive */
-
 @media only screen and (max-width: 576px) {
   .container {
     height: 50vh;
@@ -117,10 +119,12 @@ body {
     font-weight: 500;
     border-radius: 2px;
     color: aliceblue;
+    display: flex;
+    margin-bottom: 5px;
   }
 }
 
-@media (min-width: 576px) and (max-width: 768px){
+@media (min-width: 576px) and (max-width: 768px) {
   .container {
     height: 50vh;
     width: 80vw;
